@@ -1,0 +1,30 @@
+public class CollegeData {
+    public static void main(String[] args) {
+    
+        String studentName = "Suji";
+        String collegeName = "Mount Zion College of Engineering and Technology";
+
+
+        byte currentYear = 3; 
+        short sprNo = 9233;                           
+        int joiningYear = 2025;                     
+        long registrationNumber = 911723205027L;
+        float height = 150.0f;                        
+        double weight = 60.00;                        
+        char section = 'A';                           
+        boolean isFemale = true;                      
+
+        
+        System.out.println("---- Student College Profile ----");
+        System.out.println("Student Name         : " + studentName);
+        System.out.println("College Name         : " + collegeName);
+        System.out.println("Current Year         : " + currentYear);
+        System.out.println("SPR Number           : " + sprNo);
+        System.out.println("Year of Joining      : " + joiningYear);
+        System.out.println("Registration Number  : " + registrationNumber);
+        System.out.println("Height               : " + height + " cm");
+        System.out.println("Weight               : " + weight + " kg");
+        System.out.println("Section              : " + section);
+        System.out.println("Gender (Female)      : " + isFemale);
+    }
+}
