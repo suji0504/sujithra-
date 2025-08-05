@@ -1,0 +1,11 @@
+public class LoopExample {
+    public static void main(String[] args) {
+        System.out.println("Outer loop 1");
+        System.out.println("Inner loop 1");
+        System.out.println("Inner loop 2");
+        System.out.println("Inner loop 3");
+
+        System.out.println("Outer loop 2");
+        System.out.println("Outer loop 3");
+    }
+}
