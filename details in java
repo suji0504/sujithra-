@@ -29,16 +29,3 @@ public class CollegeData {
     }
 }
 
-switch case statement
-Used syntax :
-Switch(variable)
-{
-case value0:
-//block to execute
-break:
-case value1:
-//block to execute 
-break:
-default:
-//block to execute
-}
