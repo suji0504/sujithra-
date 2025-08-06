@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class AreaCalculatorSimple {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter:");
+        System.out.println("1 for Circle");
+        System.out.println("2 for Square");
+        System.out.println("3 for Triangle");
+        System.out.println("4 for Rectangle");
+        System.out.print("Your choice: ");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.print("Enter radius: ");
+                double r = sc.nextDouble();
+                double circleArea = Math.PI * r * r;
+                System.out.printf("Area of Circle = %.2f\n", circleArea);
+                break;
+
+            case 2:
+                System.out.print("Enter side: ");
+                double s = sc.nextDouble();
+                double squareArea = s * s;
+                System.out.printf("Area of Square = %.2f\n", squareArea);
+                break;
+
+            case 3:
+                System.out.print("Enter base: ");
+                double b = sc.nextDouble();
+                System.out.print("Enter height: ");
+                double h = sc.nextDouble();
+                double triangleArea = 0.5 * b * h;
+                System.out.printf("Area of Triangle = %.2f\n", triangleArea);
+                break;
+
+            case 4:
+                System.out.print("Enter length: ");
+                double l = sc.nextDouble();
+                System.out.print("Enter breadth: ");
+                double br = sc.nextDouble();
+                double rectangleArea = l * br;
+                System.out.printf("Area of Rectangle = %.2f\n", rectangleArea);
+                break;
+
+            default:
+                System.out.println("Invalid input. Enter number from 1 to 4.");
+        }
+
+        sc.close();
+    }
+}
