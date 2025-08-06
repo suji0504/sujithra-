@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);  
+        String[] arr = {"ball", "kite", "bat", "spring"};
+        arr[2] = "bat";
+        System.out.println(arr[3]);  
+    }
+}
