@@ -1,0 +1,15 @@
+public class TwoParameters {
+    static void suji(int number1, int number2) { 
+        System.out.println(number1);
+        System.out.println(number2);
+        
+    }
+
+    public static void main(String[] args) {
+        suji(1 + 1, 3 + 4);
+    }
+}
+
+OUTPUT: 
+2
+7
