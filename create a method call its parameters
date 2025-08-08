@@ -1,0 +1,17 @@
+
+
+public class MyNameMethod {
+
+   
+    static void suji(int number) { 
+        System.out.println(number);
+    }
+
+    public static void main(String[] args) {
+       
+       suji (1 + 1);
+    }
+}
+
+
+ 
