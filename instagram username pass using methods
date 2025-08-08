@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class InstagramAuth {
+    private String defaultId;
+    private String defaultPass;
+
+
+    public void setDefaultCredentials(String id, String pass) {
+        this.defaultId = id;
+        this.defaultPass = pass;
+    }
+
+    
+    public boolean isValid(String id, String pass) {
+        if (id == null || pass == null) return false;
+        return id.equals(defaultId) && pass.equals(defaultPass);
+    }
+
+   
+    public void login(String id, String pass) {
+        if (isValid(id, pass)) {
+            System.out.println("Welcome to Instagram");
+        } else {
+            
+            
+            System.out.println("Invalid");
+        }
+    }
+
+    
+    public static void main(String[] args) {
+        InstagramAuth auth = new InstagramAuth();
+
+       
+        auth.setDefaultCredentials("demoUser", "demoPass123");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter user id: ");
+        String inputId = sc.nextLine().trim();
+        System.out.print("Enter password: ");
+        String inputPass = sc.nextLine().trim();
+        sc.close();
+
+        auth.login(inputId, inputPass);
+    }
+}
