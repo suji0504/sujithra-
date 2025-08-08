@@ -1,0 +1,36 @@
+public class PersonInfo {
+
+    public static void main(String[] args) {
+        
+        printFirstName();
+        printLastName();
+        printHeight();
+        printWeight();
+    }
+
+    
+    public static void printFirstName() {
+        System.out.println("First Name: suji");
+    }
+
+    
+    public static void printLastName() {
+        System.out.println("Last Name: devi");
+    }
+
+    
+    public static void printHeight() {
+        System.out.println("Height: 170 cm");
+    }
+
+   
+    public static void printWeight() {
+        System.out.println("Weight: 62 kg");
+    }
+}
+
+OUTPUT: 
+First Name: suji
+Last Name: devi
+Height: 170 cm
+Weight: 62 kg
