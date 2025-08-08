@@ -1,0 +1,13 @@
+import java.time.Instant;
+
+public class Main {
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.sample();
+    }
+
+    public void sample() {
+        int a = 10;
+        System.out.println("Value of a: " + a);
+    }
+}
