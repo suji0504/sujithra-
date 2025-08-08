@@ -1,0 +1,13 @@
+ create a method call a (YOUR NAME) IN JAVA
+
+public class MyNameMethod {
+
+      static String suji() {  (without p
+        return "Sujithra";
+    }
+
+     public static void main(String[] args) {
+       
+        System.out.println(sujithra());
+    }
+}
