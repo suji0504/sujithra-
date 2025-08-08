@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+       
+        System.out.print("Enter the start of the range: ");
+        int start = input.nextInt();
+
+        System.out.print("Enter the end of the range: ");
+        int end = input.nextInt();
+
+        System.out.println("Auto-phobi numbers from " + start + " to " + end + ":");
+
+        
+        for (int i = start; i <= end; i++) {
+            int square = i * i;
+
+            String numStr = String.valueOf(i);
+            String squareStr = String.valueOf(square);
+
+                       if (squareStr.endsWith(numStr)) {
+                System.out.println("\t" + i + "^2 = " + square);
+            }
+        }
+    }
+}
