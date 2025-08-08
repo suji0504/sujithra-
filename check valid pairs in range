@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.print("ENTER THE NUMBER: ");
+        int target = data.nextInt();
+
+        System.out.print("ENTER THE RANGE START: ");
+        int start = data.nextInt();
+
+        System.out.print("ENTER THE RANGE END: ");
+        int end = data.nextInt();  
+
+        System.out.println("Valid pairs:");
+        for (int i = start; i <= end; i++) {
+            int complement = target - i;
+            if (complement >= start && complement <= end && i <= complement) {
+                System.out.println("\t\t" + i + "+" + complement);
+            }
+        }
+    }
+}
+
