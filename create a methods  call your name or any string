@@ -3,11 +3,14 @@
 public class MyNameMethod {
 
       static String suji() {  (without p
-        return "Sujithra";
+        return "Suji";
     }
 
      public static void main(String[] args) {
        
-        System.out.println(sujithra());
+        System.out.println(suji());
     }
 }
+
+OUTPUT: 
+suji
