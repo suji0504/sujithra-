@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        int x = 3; 
+        int y = 4; 
+
+        int[][] arr = new int[x][y]; 
+
+        int num = 1;
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                arr[i][j] = num++;
+            }
+        }
+        int middleCol = y / 2; 
+        for (int i = 0; i < x; i++) {
+            arr[i][middleCol] *= 10; 
+        }
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
