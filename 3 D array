@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[][][] arr = {
+            {
+                {11, 12, 13}, {14, 15, 16}
+                
+            },{
+                
+                {10, 19, 18}, {17, 16, 15}
+                
+            }
+            
+        };
+
+        for (int[][] x : arr) {
+            for (int[] y : x) {
+                for (int z : y) {
+                    System.out.print(z +" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+
+OUTPUT: 
+11 12 13 
+14 15 16
+10 19 18
+17 16 15
