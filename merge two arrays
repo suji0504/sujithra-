@@ -14,3 +14,7 @@ public class Main {
         System.out.println(Arrays.toString(merged));
     }
 }
+
+OUTPUT : 
+
+[12 ,23 ,34 ,45 ,56 ,67 ,78 ,89 ,9 ,11 ]
