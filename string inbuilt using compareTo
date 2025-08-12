@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        String name ="suji";
+        String name1 ="sujithra";
+        System.out.println(name.compareTo(name1));
+        System.out.println();
+        
+    }
+}
