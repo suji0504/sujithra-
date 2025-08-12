@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        String text = "book";
+        String word = "brown";
+        char[] charArray = text.toCharArray();
+        word = String.copyValueOf(charArray);
+
+        System.out.println("Value of text: " + text);
+        System.out.println("Value of word: " + word);
+    }
+}
