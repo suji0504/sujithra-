@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        String word = "HelloWorld";
+
+        System.out.println("Is it equal to 'HelloWorld'? " + word.equals("HelloWorld"));
+        System.out.println("Is it equal to 'helloworld'? " + word.equals("helloworld"));
+    }
+}
+
