@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        String filename = "document.txt";
+        
+        String word = "HelloWorld";
+        System.out.println("Does it end with 'World'? " + word.endsWith("World"));
+        System.out.println("Does it end with 'world'? " + word.endsWith("world")); 
+    }
+}
