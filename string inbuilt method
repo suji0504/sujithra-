@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+
+        System.out.print("Enter a character: ");
+        String input = x.next(); 
+        int codePointAt = input.codePointAt(0);       
+        int codePointBefore = input.codePointBefore(1); 
+
+        System.out.println("Code point at index 0: " + codePointAt);
+        System.out.println("Code point before index 3: " + codePointBefore);
+
+        x.close();
+    }
+}
