@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String name = "hello";
+        String name1 = "sujithra";
+        System.out.println(name.concat(name1));
+        System.out.println();
+    }
+}
