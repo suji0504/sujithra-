@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String a = "Hello";
+        System.out.println(a.startsWith("Hello")); 
+        System.out.println(a.startsWith("He"));  
+    }
+}
+
+OUTPUT: 
+true
+true
