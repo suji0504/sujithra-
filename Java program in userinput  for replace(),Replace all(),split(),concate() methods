@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String sentence = sc.nextLine();
+
+        System.out.print("Enter a word to replace: ");
+        String oldWord = sc.nextLine();
+        
+        System.out.print("Enter the new word: ");
+        String newWord = sc.nextLine();
+       
+        String replacedSentence = sentence.replace(oldWord, newWord);
+        System.out.println("After replace: " + replacedSentence);
+
+        
+        System.out.println("\nSplitting the sentence into words:");
+        String[] words = replacedSentence.split(" ");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+       
+        System.out.print("\nEnter a string to concatenate: ");
+        String toConcat = sc.nextLine();
+        String concatenated = replacedSentence.concat(" " + toConcat);
+        System.out.println("After concat: " + concatenated);
+
+        sc.close();
+    }
+}
+
+OUTPUT: 
+
+Enter a sentence: jungle book
+Enter a word to replace: book
+Enter the new word: life
+After replace: jungle life
+
+Splitting the sentence into words:
+jungle
+life
+
+Enter a string to concatenate: life
+After concat: jungle life life
+
