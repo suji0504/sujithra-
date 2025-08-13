@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        String a="new world";
+        String y="hello_world";
+        String x="hello|world|java";
+        
+        System.out.println("hello".matches(x));
+        System.out.println("world".matches(x));
+        System.out.println("javascript".matches(x));
+        System.out.println(y.regionMatches(7,a,4,5));
+    }
+}
+ OUTPUT: 
+true 
+true
+false 
+false
