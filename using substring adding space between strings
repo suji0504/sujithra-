@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String name = "sujithraDevi";
+
+        
+        String modified = name.substring(0, 8) + " " + name.substring(8);
+
+        System.out.println("Original: " + name);
+        System.out.println("Modified: " + modified);
+    }
+}
+
+OUTPUT: 
+Original: sujithraDevi
+Modified: sujithra Devi
