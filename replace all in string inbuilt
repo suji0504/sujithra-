@@ -1,0 +1,22 @@
+
+class Main {
+    public static void main(String[] args) {
+        String x = "hello";
+        String y = "hello suji hello";
+
+       
+        System.out.println(x.replace("e", "p"));  
+
+        String a = "(?)Hello";
+        System.out.println(a.replace("(?)Hello", "Hi")); 
+
+        String b = "hello";
+        System.out.println(y.replaceFirst(b, "Hi"));   
+    }
+}
+
+OUTPUT:
+
+hpllo
+Hi
+Hi suji hello
