@@ -1,0 +1,20 @@
+class Vehical {
+    void vechical() {
+        System.out.println("samitha");
+    }
+}
+class Anushka extends Vehical {
+    Anushka() {
+        System.out.println("anushka");
+    }
+}
+class Amritha extends Anushka {
+    Amritha() {
+        System.out.println("amritha");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Amritha obj = new Amritha();
+    }
+} 
