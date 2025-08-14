@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class grandfather {
+    void sound() {
+        System.out.println("family name");
+    }
+}
+
+class muthulakshmi extends grandfather {
+    void sound() {
+        System.out.println("muthulakshmi");
+    }
+}
+
+class sarashwati extends grandfather {
+    void sound() {
+        System.out.println("sarashwati");
+    }
+}
+
+class marudhukannan extends grandfather {
+    void sound() {
+        System.out.println("marudhukannan");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        grandfather a;
+
+        System.out.println("Enter name:");
+        String name = sc.nextLine().trim().toLowerCase();
+
+        switch (name) {
+            case "muthulakshmi":
+                a = new muthulakshmi();
+                break;
+            case "sarashwati":
+                a = new sarashwati();
+                break;
+            case "marudhukannan":
+                a = new marudhukannan();
+                break;
+            default:
+                a = new grandfather();
+                System.out.println("Name not found, using default:");
+        }
