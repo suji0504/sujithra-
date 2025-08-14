@@ -1,0 +1,39 @@
+class grandfather{
+    void sound() {
+        System.out.println("family name");
+    }
+}
+class muthulakshmi extends grandfather {
+    void sound() {
+        System.out.println("muthulakshmi");
+    }
+}
+class sarashwati extends grandfather {
+    void sound() {
+        System.out.println("sarashwati");
+    }
+}
+class marudhukannan extends grandfather {
+    void sound() {
+        System.out.println("marudhukanna");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        grandfather a;
+        a = new muthulakshmi();
+        a.sound();
+        
+        a= new sarashwati();
+        a.sound();
+        
+        a= new marudhukannan();
+        a.sound();
+    }
+}
+
+OUTPUT: 
+
+muthulakshmi
+sarashwati
+marudhukanna
