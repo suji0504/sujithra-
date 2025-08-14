@@ -1,0 +1,32 @@
+
+interface Black {
+  default void  modelOfBlack() {
+        System.out.println("This is a modelOfblack");
+    }
+}
+   n 
+interface Brown {
+  default void  modelOfBrown() {
+        System.out.println("This is a modelOfbrown");
+    }
+}
+
+class Car implements Black,Brown{
+    Car(){
+        System.out.println("This is a Cars");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car obj = new Car();
+        obj.modelOfBlack(); 
+        obj.modelOfBrown(); 
+  }
+}
+
+OUTPUT : 
+
+This is a Cars
+This is a modelOfblack
+This is a modelOfbrown
