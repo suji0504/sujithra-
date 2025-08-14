@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Name {
+    Name() {
+        System.out.println("samitha");
+    }
+}
+
+class Anushka extends Name {
+    Anushka() {
+        super();
+        System.out.println("anushka");
+    }
+}
+
+class Amritha extends Anushka {
+    Amritha() {
+        super();
+        System.out.println("amritha");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose an option:");
+        System.out.println("1.");
+        System.out.println("3..");
+        System.out.println("2");
+        int option = scanner.nextInt();
+        scanner.close();
+        switch (option) {
+            case 1:
+                Name obj1 = new Name();
+                break;
+            case 2:
+                Anushka obj2 = new Anushka();
+                break;
+            case 3:
+                Amritha obj3 = new Amritha();
+                break;
+            default:
+                System.out.println("Invalid option");
+                break;
+        }
+    }
+}
